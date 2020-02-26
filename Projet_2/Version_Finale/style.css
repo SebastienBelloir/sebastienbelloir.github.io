@@ -1,0 +1,219 @@
+/* BODY / P / LINKS & TITLES*/
+
+body{
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 3px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 45px;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 4px solid #FFCA28;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-color: #FFCA28;
+    border: 6px solid #FFCA28;
+}
+
+a{
+    color: #FFCA28;
+}
+
+a:hover{
+    color: blue;
+    font-style: italic;
+}
+
+/*DISPLAY / HEADER / ASIDE & PHOTO*/
+
+.corps_cv{
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    grid-template-areas: 
+    "photo header" 
+    "aside article";
+    grid-column-gap: 80px;
+}
+
+#photo_arrondi{
+    height: 180px;
+    margin: 65px 0 45px 0;
+    border: 5px solid #FFCA28;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo{
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+    background-color: #757575;
+
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    background-color: #757575;
+    width: auto;
+    height: 100%;
+}
+
+#contact, #a_propos, #loisirs{
+    color: white;
+    text-align: justify;
+}
+
+#a_propos{
+    flex: 2;
+}
+
+#details, #details_moi{
+    padding: 8%;
+}
+
+#loisirs_moi{
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    grid-area: header;
+    text-align: left;
+}
+
+#Prenom{
+    color: #FFCA28;
+}
+
+#devel{
+    border-bottom: 3px solid #FFCA28;
+}
+
+#position{
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+figure{
+    margin-left: 0px;
+}
+
+/* MAIN PART CORRESPONDING TO : EDUCATION / WORK EXPERIENCE & REFERENCES*/
+
+article{
+    grid-area: article;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.block1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 2%;
+}
+
+.fleche{
+    display: flex;
+}
+
+.city{
+    margin-left: 60px;
+    margin-top: -40px;
+}
+
+.right{
+    margin-top:-20px;
+}
+
+.block2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4;
+    padding-top: 2%;
+}
+
+.left, .job_left, .job_right{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.date_job{
+    margin-left: 60px;
+    margin-top: -40px;
+}
+
+.reco{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+/* MEDIA QUERY FOR RESPONSIVNESS OF WEBSITE */
+
+@media screen and (max-width: 1024px){
+
+.corps_cv{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.city{
+    margin-left: 40px;
+    margin-top: -36px;
+    font-size: 16px;
+}
+
+.date_job{
+    margin-left: 40px;  
+    margin-top: -36px;  
+    font-size: 16px;
+}
+
+.right{
+    padding-left: 5%;
+    
+}
+
+.left, .job_left, .job_right{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    padding-left: 8%;
+}
+
+.rec1{
+    padding-right: 10%;
+}
+
+.rec2{
+    padding-left: 10%;
+    border-left: 3px solid #FFCA28;
+}
+}

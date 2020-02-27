@@ -261,6 +261,7 @@ aside{
 .reco, .rec1, .rec2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    padding-left: 5%;
 }
 }

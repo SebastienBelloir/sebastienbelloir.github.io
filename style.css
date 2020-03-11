@@ -2,13 +2,13 @@
 
 body{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 3px;
     font-size: 18px;
-    text-align: justify;
 }
 
 h1{
@@ -19,25 +19,52 @@ h1{
 
 h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-bottom: 4px solid #FFCA28;
-    padding-bottom: 5px;
-    font-size: 30px;
-}
-h3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     text-align: center;
     background-color: #FFCA28;
     border: 6px solid #FFCA28;
 }
 
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 4px solid #FFCA28;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;  
+}
+
 a{
     color: #FFCA28;
+}
+
+figure{
+    margin-left: 0;
 }
 
 a:hover{
     color: blue;
     font-style: italic;
+}
+
+.fa-pencil-alt, .fa-suitcase, .fa-graduation-cap{
+    color:#FFCA28 ;
+}
+
+.fa-arrow-alt-circle-right{
+    color: #FFCA28;
+}
+
+.far{
+    color: #757575;
 }
 
 /*DISPLAY / HEADER / ASIDE & PHOTO*/
@@ -84,12 +111,18 @@ aside{
     flex: 2;
 }
 
-#details, #details_moi{
-    padding: 8%;
+#details p {
+    padding: 20px;
+    text-align: justify;
+}
+
+#details_moi{
+    text-align: justify;
+    padding: 20px;
 }
 
 #loisirs_moi{
-    padding: 10%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -112,8 +145,20 @@ header{
     margin-top: -20px;
 }
 
-figure{
-    margin-left: 0px;
+.fa-html5{
+    color:rgb(210,88,54);
+}
+
+.fa-css3-alt{
+    color:rgb(33, 98, 175);
+}
+
+.fa-js-square{
+    color: rgb(245, 222, 25);
+}
+
+.fa-bootstrap{
+    color: rgb(86, 61, 124);
 }
 
 /* MAIN PART CORRESPONDING TO : EDUCATION / WORK EXPERIENCE & REFERENCES*/
@@ -140,7 +185,8 @@ article{
 }
 
 .right{
-    margin-top:-20px;
+    margin-top:-25px;
+    text-align: justify;
 }
 
 .block2{
@@ -154,6 +200,11 @@ article{
     font-size: 18px;
 }
 
+.job_right{
+    margin-top: -25px;
+    text-align: justify;
+}
+
 .date_job{
     margin-left: 60px;
     margin-top: -40px;
@@ -162,6 +213,10 @@ article{
 .reco{
     display: grid;
     grid-template-columns: 2fr 2fr;
+}
+
+.underline {
+    text-decoration: underline ;
 }
 
 /* MEDIA QUERY FOR RESPONSIVNESS OF WEBSITE */
@@ -174,9 +229,14 @@ article{
     flex-direction: column;
 }
 
- header{
+header{
      background-color: #757575;
      margin-top: -50px;
+     text-align: unset;
+}
+
+header p{
+    padding: 20px;
 }
 
 h1{
@@ -203,7 +263,7 @@ h1{
 
 figure{
     text-align: center;
-    margin-left: 15px;
+    margin: unset;
 }
 
 h2{
@@ -215,11 +275,8 @@ aside{
     flex-direction: column;
 }
 
-#details, .adresse{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: -20px;
+#details p{
+    text-align: center;
 }
 
 .city{
